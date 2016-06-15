@@ -3,7 +3,7 @@ apply plugin: 'wrapper'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-sourceCompatibility = '1.8'
+sourceCompatibility = '1.7'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 dependencies {
@@ -22,7 +22,7 @@ publishing {
         mavenJava(MavenPublication) {
             groupId 'net.praqma.tracey'
             artifactId 'core'
-            version '1.0-SNAPSHOT'
+            version '1.0'
             from components.java
         }
     }
