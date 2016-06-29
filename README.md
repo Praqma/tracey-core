@@ -21,5 +21,19 @@ public interface TraceyAggregator {
 
 For now all inputs are primitive types. We can argue how up we want the Eiffel, and protocol abstractions to go.
 
+This module also has the the included funcitionality to slurp a `groovyish` config file: 
+
+```
+broker {
+    rabbitmq {
+        host = 'some.host.name'
+        password = 's0m3p4ss'
+        exchange = 'stacie'
+        type = 'fanout'
+        username = 'myuser'
+    }
+}
+```
+
 
 
